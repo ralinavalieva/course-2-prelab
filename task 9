@@ -1,0 +1,20 @@
+import random
+
+nums = []
+for _ in range(15):
+    number = random.randint(-10, 10)
+    nums.append(number)
+
+positives = []
+for num in nums:
+    if num > 0:
+        positives.append(num)
+
+squares = []
+for num in nums:
+    square = num ** 2
+    squares.append(square) 
+
+print('исходный список:', nums)
+print('положительные числа:', positives)
+print('квадраты чисел:', squares)
