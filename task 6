@@ -1,0 +1,17 @@
+student = {
+    'name': 'иван',
+    'age': 19,
+    'course': 4,
+    'grades': [4, 5, 3, 5, 4]
+}
+
+print('имя:', student['name'])
+print('курс:', student['course'])
+
+
+average_grade = sum(student['grades']) / len(student['grades'])
+print('средний балл:', average_grade)
+
+student['grades'].append(5)
+
+print('обновленный словарь:', student)
