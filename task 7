@@ -1,0 +1,16 @@
+import math
+
+def calculate_circle_area(radius):
+    return math.pi * radius ** 2
+
+def is_positive(number):
+    return number > 0
+
+r = 5
+print(f'Площадь круга с радиусом {r}:', calculate_circle_area(r))
+
+num = -3
+print(f'число {num} положительное?', is_positive(num))
+
+num = 7
+print(f'число {num} положительное?', is_positive(num))
