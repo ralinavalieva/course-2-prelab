@@ -1,0 +1,26 @@
+def shift_letter(char, shift=3):
+
+    if 'A' <= char <= 'Z':
+        position = ord(char) - ord('A')
+        new_position = (position + shift) % 26
+        return chr(new_position + ord('A'))
+
+    elif 'a' <= char <= 'z':
+        position = ord(char) - ord('a')
+        new_position = (position + shift) % 26
+        return chr(new_position + ord('a'))
+
+    else:
+        return char
+
+
+def shift_text(text):
+    res = ''
+    for ch in text:
+        res += shift_letter(ch)
+    return res
+
+
+input_text = "Hello, World!"
+output_text = shift_text(input_text)
+print(output_text)
