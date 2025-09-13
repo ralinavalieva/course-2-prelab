@@ -1,7 +1,7 @@
 import random
 
 nums = []
-for _ in range(15):
+for i in range(15):
     number = random.randint(-10, 10)
     nums.append(number)
 
