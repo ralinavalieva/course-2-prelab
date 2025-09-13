@@ -1,0 +1,11 @@
+r = int(input('введите первое число: '))
+a = int(input('введите второе число: '))
+w = int(input('введите третье число: '))
+
+min_num = r
+if a < min_num:
+    min_num = a
+if w < min_num:
+    min_num = w
+
+print('наименьшее число:', min_num)
