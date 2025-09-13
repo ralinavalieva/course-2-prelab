@@ -1,0 +1,5 @@
+name = input('введите имя:')
+birth_year = int(input('введите год рождения:'))
+current_year = 2025
+age = current_year - birth_year
+print(f'привет!{name}!в этом году тебе исполняется {age} лeт')
