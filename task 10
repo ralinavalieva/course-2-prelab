@@ -1,0 +1,10 @@
+while True:
+    s = input('введите число или стоп для выхода:')
+    if s.lower() == "стоп":
+        print('программа завершена')
+        break
+    try:
+        num = float(s)
+        print('вы ввели число:', num)
+    except ValueError:
+        print('ошибка: введите число или стоп.')
